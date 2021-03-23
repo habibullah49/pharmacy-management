@@ -1,0 +1,19 @@
+.container_sec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: tomato;
+  height: 60px;
+}
+.style {
+  font-style: italic;
+  font-weight: 700;
+}
+.hedder {
+  font-size: 20px;
+  color: white;
+}
+
+.icon {
+  font-size: 30px;
+}

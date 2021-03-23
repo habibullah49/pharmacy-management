@@ -1,23 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Help from "./components/Help/Help";
+import Information from "./components/Information/Information";
+import Login from "./components/Login/Login";
+import LogoPart from "./components/LogoPart/LogoPart"
+import Return from "./components/Return/Return";
+import Story from "./components/Story/Story";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+        <Route exact path='/story'>
+          <Story></Story>
+          </Route>
+          <Route exact path='/contact'>
+            <Contact></Contact>
+          </Route>
+
+          <Route exact path='/help'>
+           <Help></Help>
+          </Route>
+
+          <Route exact path='/return'>
+           <Return></Return>
+          </Route>
+
+
+          <Route path=''>
+            <Header></Header>
+            <LogoPart></LogoPart>
+            <Information></Information>
+            <About></About>
+            <Footer></Footer>
+            </Route>
+            
+         
+        </Switch>
+      </Router>
+      
     </div>
   );
 }

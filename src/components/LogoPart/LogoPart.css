@@ -1,0 +1,94 @@
+.logo-part {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(225, 252, 245, 0.788);
+  align-items: center;
+  height: 70px;
+}
+.logo-part img {
+  width: 50px;
+  height: 60px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.hedder {
+  font-size: 20px;
+  color: white;
+}
+
+.search {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 45px;
+  border: 1px solid rgb(235, 226, 226);
+  border-radius: 10px;
+}
+.search::placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+.search_button {
+  height: 45px;
+  width: 100px;
+  border: 1px solid rgb(235, 226, 226);
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-top: 20px;
+}
+nav li {
+  list-style: none;
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+nav {
+  font-size: 25px;
+}
+nav li:hover {
+  background-color: darkgray;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+}
+nav > ul > li:hover > ul {
+  display: block;
+  background-color: lightgray;
+  margin: 10px;
+  padding: 10px;
+}
+.button_design {
+  height: 45px;
+  width: 100px;
+  border: 1px solid rgb(235, 226, 226);
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.button_design:hover {
+  background-color: tomato;
+}
+.Flex {
+  display: flex;
+}
+.name {
+  margin-left: 30px;
+}
